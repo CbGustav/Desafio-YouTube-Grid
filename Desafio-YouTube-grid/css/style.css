@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 450px);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: "header header header header" "nav . main main";
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    padding: 0 24px 0 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+button{
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgb(10, 117, 218);
+    color: rgb(10, 117, 218);
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+nav ul{
+
+    top: 56px;
+}
+
+li{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    gap: 22px;
+    cursor: pointer;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.icon-texto{
+    top: 10px;
+}
+
+main{
+    display: grid;
+    height: 890px;
+    width: 1455px;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(3, 300px);
+    background-color: #e7e1e1;
+}
+
+.main-videos{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+
+}
+
+.sinopse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.five-icon{
+    
+    height: 42px;
+    width: 42px;
+}
